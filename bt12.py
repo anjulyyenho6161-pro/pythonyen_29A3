@@ -20,4 +20,3 @@ elif d=R:
 else:
   print(" điểm m nằm ngoài hình tròn")
 
-print(ket_qua)
