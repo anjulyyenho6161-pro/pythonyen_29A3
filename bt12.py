@@ -11,6 +11,11 @@ d = math.sqrt(((x - a) ** 2) +((y - b) ** 2))
 
 # Kiểm tra điều kiện (<= R^2)
 ket_qua = d <= R
-if ket_qua =d<=R:
+if d<R:
+  print("điểm M nằm trong hình tròn")
+elif d=R:
+  print("điểm m nằm trên hình tròn")
+else:
+  print(" điểm m nằm ngoài hình tròn")
 
 print(ket_qua)
