@@ -11,5 +11,6 @@ d = math.sqrt(((x - a) ** 2) +((y - b) ** 2))
 
 # Kiểm tra điều kiện (<= R^2)
 ket_qua = d <= R
+if ket_qua =d<=R:
 
 print(ket_qua)
