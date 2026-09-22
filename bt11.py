@@ -1,5 +1,4 @@
 import math
-
 print("--- GIẢI PHƯƠNG TRÌNH BẬC HAI: ax^2 + bx + c = 0 ---")
 a = float(input("Nhập hệ số a (a khác 0): "))
 b = float(input("Nhập hệ số b: "))
