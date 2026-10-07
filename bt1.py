@@ -1,20 +1,26 @@
-# Bước 1: Nhập nhiệt độ C từ bàn phím
-celsius = float(input("Nhập nhiệt độ Celsius: "))
+n= int(input("nhap so pt của dãy: "))
+A=[]
+for i in range(n):
+    print(f"phần tử thứ A[{i}]=",end='')
+    A.append(float(input()))
+print(A)
+dat=0
+khongdat=0
+maxd=A[0]
+B=[]
+vtmax=0
+for i in range(len(A)):
+     if A[i]>=5:
+         dat=dat+1
+     else:
+         khongdat=khongdat+1
+     if A[i]>7:
+         B.append(A[i])
+     if A[i]>maxd:
+         maxd=A[i]
+         vtmax=i
 
-# Bước 2: Tính nhiệt độ Kelvin
-kelvin = celsius + 273.15
-
-# Bước 3: In kết quả ra màn hình
-print(celsius, "độ C bằng", kelvin, "K")
-
-'''Dòng 1: celsius = float(input("Nhập nhiệt độ Celsius: ")
-input : Hiện dòng chữ thông báo 
-float : Biến văn bản người dùng vừa gõ thành số thập phân (để có thể thực hiện phép cộng toán học).
-celsius =: Lưu con số đó vào tên là celsius.
-
- Dòng 2: kelvin = celsius + 273.15
- Lấy con số đang đc gán trong 'celsius' cộng thêm 273.15 sau đó, lưu kết quả vừa tính được vào một tên mới là kelvin.
- 
- Dòng 3: print(celsius, "độ C bằng", kelvin, "K")
- Hàm print() dùng để hiển thị dữ liệu ra màn hình.
- Các thành phần cách nhau bởi dấu phẩy sẽ được in ra nối tiếp nhau  '''
+print(f"Số lượng phần tử đạt (>=5): {dat}")
+print(f"Số lượng phần tử không đạt (<5): {khongdat}")
+print(f"Các phần tử lớn hơn 7 (B): {B}")
+print(f"Phần tử lớn nhất là {maxd} tại vị trí A[{vtmax}]")
