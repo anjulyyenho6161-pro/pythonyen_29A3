@@ -122,6 +122,18 @@ class DSLK:  # Một danh sách
             p = p.next
         print("None")
         print(f"👉 Độ dài danh sách (số lượng phần tử): {self.tinh_do_dai()}")
+    def chiahetcho2(self):
+        if self.head is None:
+            return
+        print('danh sách các số chia hết cho 2: ')
+        p=self.head
+        tong=0
+        while p:
+            if p.data % 2==0:
+                print(p.data, end="-")
+                tong+=p.data
+            p= p.next
+        print("tong",tong)
 
 
 # ================= THỬ NGHIỆM CHƯƠNG TRÌNH =================
